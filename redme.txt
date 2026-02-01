@@ -1,0 +1,58 @@
+=== WooCommerce Custom HTML Field ===
+Contributors: seu-usuario
+Tags: woocommerce, custom field, price, shortcode, calculator
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.4
+Stable tag: 1.1.2
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Adicione campos de conteúdo personalizado e cálculos automáticos abaixo do preço no WooCommerce.
+
+== Description ==
+
+O **WooCommerce Custom HTML Field** é uma ferramenta poderosa para lojistas que precisam exibir informações dinâmicas baseadas no preço do produto. 
+
+Com ele, você pode inserir textos, HTML e realizar cálculos matemáticos (como parcelamento ou descontos) que são atualizados automaticamente conforme o preço do produto muda.
+
+= Principais Vantagens =
+* **Aba de Configurações**: Gerencie tudo em WooCommerce > Configurações > Campo Personalizado.
+* **Shortcodes Matemáticos**: Use `[preco_calculado fator="0.1"]` para exibir 10% do valor.
+* **Inteligência de Exibição**: O campo não aparece em produtos com preço R$ 0 ou sem preço definido.
+* **Compatibilidade**: Funciona em páginas de produto, carrosséis e grids de loja.
+
+== Installation ==
+
+1. Envie a pasta `campo-personalizado-wc-produto` para o diretório `/wp-content/plugins/`.
+2. Ative o plugin através do menu 'Plugins' no WordPress.
+3. Configure o conteúdo em **WooCommerce > Configurações > Campo Personalizado**.
+
+== Frequently Asked Questions ==
+
+= Onde o campo aparece? =
+Por padrão, ele aparece logo abaixo do preço na página individual do produto e também nas listagens (Loja e Home).
+
+= Como faço para mostrar um parcelamento de 12x? =
+Basta usar o shortcode no editor: `12x de [preco_calculado fator="0.0833"]`.
+
+= O plugin funciona com o Elementor? =
+Sim, desde que o carrossel do Elementor utilize os hooks padrões do WooCommerce.
+
+== Screenshots ==
+
+1. Painel de configurações dentro do menu do WooCommerce.
+2. Exemplo do campo sendo exibido abaixo do preço no site.
+
+== Changelog ==
+
+= 1.1.2 =
+* Adicionada verificação para ocultar o campo em produtos com preço zero.
+* Melhoria na detecção de ID em carrosséis e loops.
+
+= 1.1.0 =
+* Implementação da estrutura modular (classes separadas).
+* Adição de suporte ao HPOS.
+
+= 1.0.0 =
+* Versão inicial do plugin.
