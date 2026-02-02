@@ -33,6 +33,7 @@ O plugin é organizado de forma modular para facilitar a manutenção:
 
 Dentro da aba Campo Personalizado nas configurações do WooCommerce, você pode utilizar os seguintes comandos:
 
+
 | Shortcode | Exemplo de Uso | Resultado |
 |---|---|---|
 | [preco_produto] | Preço: [preco_produto] | Exibe o preço atual (R$ 100,00) |
